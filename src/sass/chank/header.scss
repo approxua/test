@@ -1,7 +1,16 @@
-.header-top {
+$font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+.header-wrapper {
+  font: 100% $font-montserrat;
+}
+.header-top-wrapper {
+  a {
+    cursor: pointer;
+  }
   background-color: #eff0f3;
-  padding: 20px 0;
-  .container {
+  height: 44px;
+  .header-top {
+    font: .812rem $font-montserrat;
     display: flex;
     justify-content: space-between;
     ul {
@@ -9,19 +18,28 @@
       margin: 0;
       padding: 0;
       list-style: none;
+    }
+    a {
+      padding: 10px 0;
+      color: #777;
+      text-decoration: none;
+      display: block;
+      height: 24px;
+    }
+    nav {
       li {
-        a {
-          padding: 10px;
-          color: #777;
-          text-decoration: none;
-        }
+        padding-right: 25px;
+      }
+      a:hover {
+        color: #333;
       }
     }
     .header-info {
       width: 50%;
+      height: 44px;
       display: flex;
       justify-content: space-between;
-      form {
+      .header-city {
         span {
           color: #555;
           padding-right: 10px;
@@ -30,28 +48,141 @@
           background: transparent;
           border: none;
           outline: none;
+          color: #333;
+          padding: 0 10px;
+          border-left: solid 1px #d8d9dc;
+          border-right: solid 1px #d8d9dc;
+          height: 100%;
         }
       }
       .header-lang {
-        a {
-          color: #777;
-          text-decoration: none;
-          margin: 0 10px;
-          padding: 15px 0;
-        }
-        a:hover {
+        .active-lang {
           border-bottom: 2px solid #fb2539;
+          color: #333;
+        }
+        a {
+          padding: 10px 0 8px 0;
+          margin: 0 10px;
+        }
+        a:active {
+          border-bottom: 2px solid #fb2539;
+          color: #333;
         }
       }
     }
     .header-user {
       a {
-        color: #777;
-        text-decoration: none;
-        margin: 0 10px;
+        padding: 10px;
       }
       a:hover {
         color: #fb2539;
+      }
+    }
+  }
+}
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  form {
+    margin: auto 0;
+    display: flex;
+  }
+  .header-logo {
+    a {
+      display: block;
+      height: 112px;
+      width: 234px;
+      background: url("../img/logo.jpg") no-repeat;
+    }
+  }
+  .header-search {
+    width: 350px;
+    height: 44px;
+    border: solid 1px #c2c2c2;
+    border-radius: 25px;
+    input {
+      border: none;
+      padding: 15px 0;
+      outline: none;
+      font-size: .812rem;
+      width: 80%;
+      margin-left: 25px;
+    }
+    input::placeholder {
+      color: #999;
+    }
+    .icon-search {
+      border: none;
+      background: inherit;
+      font-size: 22px;
+      padding: 0;
+    }
+    button:before {
+      margin: 0;
+    }
+  }
+  select {
+    border: none;
+    outline: none;
+  }
+  .header-backcall {
+    background: inherit;
+    border: solid 2px #ffdc2c;
+    padding: 10px;
+    font: .812rem $font-montserrat;
+  }
+  a {
+    margin: auto 0;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    font: .75rem $font-montserrat;
+    i:before {
+      padding-bottom: 5px;
+      display: block;
+      margin: 0 auto;
+      font-size: 26px;
+      width: 35px;
+    }
+  }
+}
+.header-bottom {
+  background-color: #3c3f43;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 100%;
+      height: 54px;
+      a {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font: .812rem $font-montserrat;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        i:before {
+          font-size: 21px;
+          padding-right: 5px;
+          color: #ebc712;
+        }
+      }
+      a:hover {
+        background-color: #fb2539;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        text-transform: none;
+      }
+      .active-menu {
+        width: 234px;
       }
     }
   }

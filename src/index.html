@@ -3,53 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <title>База Авто Звука</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- Begin Header -->
 <div class="header-wrapper">
-  <div class="header-top">
+  <div class="header-top-wrapper">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Магазины</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Оплата</a></li>
-          <li><a href="#">Бонусная программа</a></li>
-        </ul>
-      </nav>
-      <div class="header-info">
-        <div class="header-lang">
-          <a href="#">Рус</a>
-          <a href="#">Укр</a>
-        </div>
-        <form>
-          <span>Ваш город:</span>
-          <select name="city" id="city">
-            <option value="Киев">Киев</option>
-            <option value="Львов">Львов</option>
-            <option value="Хмельницкий">Хмельницкий</option>
-            <option value="Винница">Винница</option>
-            <option value="Харьков">Харьков</option>
-            <option value="Одесса">Одесса</option>
-          </select>
-        </form>
-        <div class="header-user">
-          <a href="#" class="login">Вход</a>
-          <a href="#" class="registration">Регистрация</a>
+      <div class="header-top">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Магазины</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Оплата</a>
+            </li>
+            <li>
+              <a href="#">Бонусная программа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-info">
+          <ul class="header-lang">
+            <li>
+              <a href="#" class="active-lang">Рус</a>
+            </li>
+            <li>
+              <a href="#">Укр</a>
+            </li>
+          </ul>
+          <form class="header-city">
+            <span>Ваш город:</span>
+            <select name="city" id="city">
+              <option value="Киев">Киев</option>
+            </select>
+          </form>
+          <ul class="header-user">
+            <li>
+              <a href="#" class="login">
+                <i class="icon-lock"></i>
+                Вход
+              </a>
+            </li>
+            <li>
+              <a href="#" class="registration">
+                <i class="icon-lock"></i>
+                Регистрация
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="header-middle">
-    <div class="header-logo"></div>
-    <form action="">
-      <input type="text" placeholder="Поиск по названию, коду, катигории товара">
-      <button></button>
-    </form>
+  <div class="container">
+    <div class="header-middle">
+      <div class="header-logo">
+        <a href="#"></a>
+      </div>
+      <form class="header-search">
+        <input type="search" placeholder="Поиск по названию, коду, катигории товара">
+        <button class="icon-search"></button>
+      </form>
+      <form>
+        <select name="number" id="number">
+          <option value="0-800-30-15-85">0-800-30-15-85</option>
+          <option value="0-800-30-15-86">0-800-30-15-86</option>
+          <option value="0-800-30-15-87">0-800-30-15-87</option>
+        </select>
+        <button class="header-backcall">Обратный звонок</button>
+      </form>
+      <a href="#"><i class="icon-warehouse"></i>Гараж</a>
+      <a href="#"><i class="icon-heart-empty"></i>Избранное</a>
+      <a href="#"><i class="icon-balance"></i>Сравнение</a>
+      <a href="#"><i class="icon-basket"></i>Корзина</a>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="#" class="active-menu">
+            <i class="icon-align-right"></i>
+            Каталог товаров
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-percent"></i>
+            Акции
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-chart-bar"></i>
+            Сравнительние тесты
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-question"></i>
+            Как выбрать
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-article"></i>
+            Новости
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 <!-- End Header -->

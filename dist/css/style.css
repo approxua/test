@@ -1,0 +1,78 @@
+.header-top-wrapper {
+  background-color: #eff0f3;
+  height: 44px; }
+  .header-top-wrapper .header-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header-top-wrapper .header-top ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .header-top-wrapper .header-top a {
+      padding: 10px;
+      color: #777;
+      text-decoration: none;
+      display: block;
+      height: 24px; }
+    .header-top-wrapper .header-top nav a:hover {
+      color: #333; }
+    .header-top-wrapper .header-top .header-info {
+      width: 50%;
+      height: 44px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .header-top-wrapper .header-top .header-info .header-city span {
+        color: #555;
+        padding-right: 10px; }
+      .header-top-wrapper .header-top .header-info .header-city select {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #333;
+        border-left: solid 1px #d8d9dc;
+        border-right: solid 1px #d8d9dc;
+        height: 100%; }
+      .header-top-wrapper .header-top .header-info .header-lang a {
+        padding: 10px 0 8px 0;
+        margin: 0 10px; }
+      .header-top-wrapper .header-top .header-info .header-lang a:active {
+        border-bottom: 2px solid #fb2539;
+        color: #333; }
+    .header-top-wrapper .header-top .header-user a:hover {
+      color: #fb2539; }
+
+.header-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .header-middle .header-logo a {
+    display: block;
+    height: 112px;
+    width: 234px;
+    background: url("../img/logo.jpg") no-repeat; }
+
+.container {
+  max-width: 1300px;
+  padding: 0 5px;
+  margin: 0 auto; }
