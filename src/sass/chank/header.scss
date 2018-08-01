@@ -3,6 +3,7 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
 .header-wrapper {
   font: 100% $font-montserrat;
 }
+
 .header-top-wrapper {
   a {
     cursor: pointer;
@@ -74,8 +75,14 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
       a {
         padding: 10px;
       }
+      i:before {
+        visibility: hidden;
+      }
       a:hover {
         color: #fb2539;
+      }
+      a:hover i:before {
+        visibility: visible;
       }
     }
   }
@@ -118,6 +125,7 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
       background: inherit;
       font-size: 22px;
       padding: 0;
+      cursor: pointer;
     }
     button:before {
       margin: 0;
@@ -132,13 +140,15 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
     border: solid 2px #ffdc2c;
     padding: 10px;
     font: .812rem $font-montserrat;
+    outline: none;
+    cursor: pointer;
   }
   a {
     margin: auto 0;
     text-decoration: none;
     color: #333;
-    position: relative;
     font: .75rem $font-montserrat;
+    position: relative;
     i:before {
       padding-bottom: 5px;
       display: block;
@@ -146,8 +156,23 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-size: 26px;
       width: 35px;
     }
+    .icon-heart-empty:after {
+      content: '1';
+      width: 12px;
+      height: 12px;
+      text-align: center;
+      color: white;
+      font-size: 9px;
+      position: absolute;
+      background-color: #fb2539;
+      border: solid 2px #fb2539;
+      border-radius: 100px;
+      right: 14px;
+      top: -5px;
+    }
   }
 }
+
 .header-bottom {
   background-color: #3c3f43;
   ul {

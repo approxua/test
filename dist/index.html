@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>База Авто Звука</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,60 +15,275 @@
       <div class="header-top">
         <nav>
           <ul>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Магазины</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Оплата</a></li>
-            <li><a href="#">Бонусная программа</a></li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Магазины</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Оплата</a>
+            </li>
+            <li>
+              <a href="#">Бонусная программа</a>
+            </li>
           </ul>
         </nav>
         <div class="header-info">
           <ul class="header-lang">
-            <li><a href="#">Рус</a></li>
-            <li><a href="#">Укр</a></li>
+            <li>
+              <a href="#" class="active-lang">Рус</a>
+            </li>
+            <li>
+              <a href="#">Укр</a>
+            </li>
           </ul>
           <form class="header-city">
             <span>Ваш город:</span>
             <select name="city" id="city">
               <option value="Киев">Киев</option>
-              <option value="Львов">Львов</option>
-              <option value="Хмельницкий">Хмельницкий</option>
-              <option value="Винница">Винница</option>
-              <option value="Харьков">Харьков</option>
-              <option value="Одесса">Одесса</option>
             </select>
           </form>
           <ul class="header-user">
-            <li><a href="#" class="login">Вход</a></li>
-            <li><a href="#" class="registration">Регистрация</a></li>
+            <li>
+              <a href="#" class="login">
+                <i class="icon-lock"></i>
+                Вход
+              </a>
+            </li>
+            <li>
+              <a href="#" class="registration">
+                <i class="icon-lock"></i>
+                Регистрация
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="header-middle">
-    <div class="header-logo">
-      <a href="#"></a>
+  <div class="container">
+    <div class="header-middle">
+      <div class="header-logo">
+        <a href="#"></a>
+      </div>
+      <form class="header-search">
+        <input type="search" placeholder="Поиск по названию, коду, катигории товара">
+        <button class="icon-search"></button>
+      </form>
+      <form>
+        <select name="number" id="number">
+          <option value="0-800-30-15-85">0-800-30-15-85</option>
+          <option value="0-800-30-15-86">0-800-30-15-86</option>
+          <option value="0-800-30-15-87">0-800-30-15-87</option>
+        </select>
+        <button class="header-backcall">Обратный звонок</button>
+      </form>
+      <a href="#"><i class="icon-warehouse"></i>Гараж</a>
+      <a href="#"><i class="icon-heart-empty"></i>Избранное</a>
+      <a href="#"><i class="icon-balance"></i>Сравнение</a>
+      <a href="#"><i class="icon-basket"></i>Корзина</a>
     </div>
-    <form>
-      <input type="text" placeholder="Поиск по названию, коду, катигории товара">
-      <button></button>
-    </form>
-    <form >
-      <select name="number" id="number">
-        <option value="0-800-30-15-85"></option>
-        <option value="0-800-30-15-86"></option>
-        <option value="0-800-30-15-87"></option>
-      </select>
-      <button></button>
-    </form>
-    <i></i>
-    <i></i>
-    <i></i>
-    <i></i>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="#" class="active-menu">
+            <i class="icon-align-right"></i>
+            Каталог товаров
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-percent"></i>
+            Акции
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-chart-bar"></i>
+            Сравнительние тесты
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-question"></i>
+            Как выбрать
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-article"></i>
+            Новости
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 <!-- End Header -->
+<!-- Begin main page -->
+<div class="container">
+  <!-- Begin main product -->
+  <ul class="catalog">
+    <li>
+      <a href="#">Главная</a>
+    </li>
+    <li class="icon-angle-right">
+      <a href="#">Запчасти и расходники</a>
+    </li>
+    <li class="icon-angle-right">
+      <a href="#">Масло</a>
+    </li>
+    <li class="icon-angle-right">
+      <a href="#">Моторное масло</a>
+    </li>
+    <li class="icon-angle-right">
+      <a href="#">Mobil</a>
+    </li>
+    <li class="icon-angle-right">
+      <a href="#">Моторное масло MOBIL Super 3000 X1 5W-40, 4л</a>
+    </li>
+  </ul>
+  <div class="product-name">
+    <h1 class="name">Моторное масло MOBIL Super 3000 X1 5W-40, 4л</h1>
+    <div class="article">Код товара : 39207</div>
+  </div>
+  <div class="main-product">
+    <div class="product-body">
+      <ul class="product-box">
+        <li><a href="#"><img src="img/small-oil.png" alt="oil"></a></li>
+        <li><a href="#"><i class="icon-coub"></i></a></li>
+        <li><a href="#"><i class="icon-play"></i><img src="img/small.jpg" alt="oil"></a></li>
+        <li><a href="#"><img src="img/small-oil2.png" alt="oil"></a></li>
+        <li><a href="#"><img src="img/small-oil2.png" alt="oil"></a></li>
+      </ul>
+      <div class="product-photo">
+        <a href="#"><img src="img/big-oil.png" alt="oil"></a>
+      </div>
+      <div class="availability-body">
+        <ul class="availability-title">
+          <li>Нет в наличии</li>
+          <li class="star-rating">
+            <div class="star-rating__wrap">
+              <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-5"
+                     title="5 из 5 звезд"></label>
+              <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-4"
+                     title="4 из 5 звезд"></label>
+              <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-3"
+                     title="3 из 5 звезд"></label>
+              <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-2"
+                     title="2 из 5 звезд"></label>
+              <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-1"
+                     title="1 из 5 звезд"></label>
+            </div>
+          </li>
+          <li><a href="#"><i class="icon-chat"></i>3 отзыва</a></li>
+          <li><a href="#"><i class="icon-question"></i>4 вопроса</a></li>
+        </ul>
+        <div class="availability-box">
+          <div class="availability-massage">
+            <h1>
+              456 <span>грн</span>
+            </h1>
+            <a href="#" class="availability-button">
+              Сообщить о поступлении
+            </a>
+            <p>
+              ELF Tranself NFJ 75W-80 1л - Трансмиссионное масло
+              Тип масла: Трансмиссионное масло ; Тип основы масла: синтетическое масло; SAE: 75W-80; Емкость, л: 1 ELF
+              Tranself NFJ 75W-80 1л - Трансмиссионное масло Тип масла: Трансмиссионное масло ; Тип основы масла:
+              синтетическое масло; SAE: 75W-80; Емкость, л: 1
+            </p>
+            <div class="share-buttons">
+              <a href="#"><i class="icon-spread"></i>Поделитса</a>
+              <a href="#"><i class="icon-balance"></i>Сравнить</a>
+            </div>
+          </div>
+          <div class="other-shop">
+            <a href="#"><img src="img/other.png" alt="oil"></a>
+            <div>
+              <span><i class="icon-done"></i>В наличии</span>
+              <p>
+                Трансмиссионное масло CASTRO Manual EP 80W-90 1л
+              </p>
+              <a href="#">345<span>грн</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End main product -->
+  <!-- Begin other product slider 1 -->
+  <div class="product-slider1">
+    <a href="#" class="product-slide">
+      <img src="img/other1.png" alt="oil">
+      <div>
+        <span class="article-code">Код товара : 39207</span>
+        <span class="availability">В наличии</span>
+      </div>
+      <p>Моторное масло Castrol
+        Magnatec 10W-40 A3/B4 4 л</p>
+      <span>104<span>грн</span></span>
+    </a>
+    <a href="#" class="product-slide">
+      <img src="img/other2.png" alt="oil">
+      <div>
+        <span class="article-code">Код товара : 39207</span>
+        <span class="availability">В наличии</span>
+      </div>
+      <p>Моторное масло Shell Helix
+        HX7 10W-40 4 л</p>
+      <span>456<span>грн</span></span>
+    </a>
+    <a href="#" class="product-slide">
+      <img src="img/other3.png" alt="oil">
+      <div>
+        <span class="article-code">Код товара : 39207</span>
+        <span class="availability">В наличии</span>
+      </div>
+      <p>Моторное масло Mobil Super
+        3000 X1 5W-40 4 л</p>
+      <span>268<span>грн</span></span>
+    </a>
+    <a href="#" class="product-slide">
+      <img src="img/other4.png" alt="oil">
+      <div>
+        <span class="article-code">Код товара : 39207</span>
+        <span class="availability">В наличии</span>
+      </div>
+      <p>Моторное масло Castrol
+        Magnatec 10W-40 A3/B4 4 л</p>
+      <span>105<span>грн</span></span>
+    </a>
+    <a href="#" class="product-slide">
+      <img src="img/other5.png" alt="oil">
+      <div>
+        <span class="article-code">Код товара : 39207</span>
+        <span class="availability">В наличии</span>
+      </div>
+      <p>Моторное масло Shell Helix
+        HX7 10W-40 4 л</p>
+      <span>456<span>грн</span></span>
+    </a>
+  </div>
+  <!-- End other product slider 1 -->
+</div>
+<!-- End main page -->
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

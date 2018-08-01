@@ -68,8 +68,12 @@
         color: #333; }
     .header-top-wrapper .header-top .header-user a {
       padding: 10px; }
+    .header-top-wrapper .header-top .header-user i:before {
+      visibility: hidden; }
     .header-top-wrapper .header-top .header-user a:hover {
       color: #fb2539; }
+    .header-top-wrapper .header-top .header-user a:hover i:before {
+      visibility: visible; }
 
 .header-middle {
   display: -webkit-box;
@@ -119,7 +123,8 @@
       border: none;
       background: inherit;
       font-size: 22px;
-      padding: 0; }
+      padding: 0;
+      cursor: pointer; }
     .header-middle .header-search button:before {
       margin: 0; }
   .header-middle select {
@@ -129,19 +134,35 @@
     background: inherit;
     border: solid 2px #ffdc2c;
     padding: 10px;
-    font: 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    font: 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    outline: none;
+    cursor: pointer; }
   .header-middle a {
     margin: auto 0;
     text-decoration: none;
     color: #333;
-    position: relative;
-    font: 0.75rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    font: 0.75rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    position: relative; }
     .header-middle a i:before {
       padding-bottom: 5px;
       display: block;
       margin: 0 auto;
       font-size: 26px;
       width: 35px; }
+    .header-middle a .icon-heart-empty:after {
+      content: '1';
+      width: 12px;
+      height: 12px;
+      text-align: center;
+      color: white;
+      font-size: 9px;
+      position: absolute;
+      background-color: #fb2539;
+      border: solid 2px #fb2539;
+      -webkit-border-radius: 100px;
+              border-radius: 100px;
+      right: 14px;
+      top: -5px; }
 
 .header-bottom {
   background-color: #3c3f43; }
