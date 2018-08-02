@@ -355,32 +355,26 @@
 
 .star-rating {
   font-size: 0; }
-
-.star-rating__wrap {
-  display: inline-block;
-  font-size: 1rem; }
-
-.star-rating__wrap:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.star-rating__ico {
-  float: right;
-  padding-left: 2px;
-  cursor: pointer;
-  color: #FFB300; }
-
-.star-rating__ico:last-child {
-  padding-left: 0; }
-
-.star-rating__input {
-  display: none; }
-
-.star-rating__ico:hover:before,
-.star-rating__ico:hover ~ .star-rating__ico:before,
-.star-rating__input:checked ~ .star-rating__ico:before {
-  content: '\e802'; }
+  .star-rating .star-rating__wrap {
+    display: inline-block;
+    font-size: 1rem; }
+  .star-rating .star-rating__wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .star-rating .star-rating__ico {
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #ffdc2c; }
+  .star-rating .star-rating__ico:last-child {
+    padding-left: 0; }
+  .star-rating .star-rating__input {
+    display: none; }
+  .star-rating .star-rating__ico:hover:before,
+  .star-rating .star-rating__ico:hover ~ .star-rating__ico:before,
+  .star-rating .star-rating__input:checked ~ .star-rating__ico:before {
+    content: '\e802'; }
 
 .availability-box {
   display: -webkit-box;
@@ -637,6 +631,138 @@
     font: 0.875rem/1.57 "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #333; }
 
+.review-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0; }
+  .review-buttons div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .review-buttons div a:active {
+      border: solid 1px #fb2539;
+      color: #333; }
+  .review-buttons a {
+    padding: 10px 40px;
+    border: solid 1px #e1e1e1;
+    text-decoration: none;
+    font: 700 1rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #777; }
+  .review-buttons .send-question {
+    font-size: .937rem;
+    color: #333;
+    background-color: #ffdc2c;
+    border: 0; }
+
+.feedback-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border: solid 1px #ffdc2c; }
+  .feedback-box .feedback {
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .feedback-box .feedback h2 {
+      font: 700 1rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #333;
+      margin: 0; }
+      .feedback-box .feedback h2 span {
+        font: 400 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #999;
+        padding-left: 10px; }
+    .feedback-box .feedback p {
+      font: 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      line-height: 1.53;
+      color: #333; }
+    .feedback-box .feedback span {
+      color: #333;
+      font: 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .feedback-box .feedback .like {
+      color: #57ae85;
+      font-weight: 700;
+      margin: 10px 0; }
+    .feedback-box .feedback .dislike {
+      color: #f8727e;
+      font-weight: 700;
+      margin: 10px 0; }
+    .feedback-box .feedback .icon-like:before {
+      padding-right: 10px; }
+    .feedback-box .feedback div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .feedback-box .feedback div a {
+        text-decoration: none;
+        color: #333;
+        padding: 3px 0;
+        border-bottom: solid 1px #c1c1c1;
+        margin-right: 40px; }
+      .feedback-box .feedback div span {
+        font: 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #777; }
+        .feedback-box .feedback div span i:before {
+          font-size: 18px;
+          color: #333;
+          padding: 0 5px;
+          margin: 0; }
+        .feedback-box .feedback div span .scale:before {
+          -webkit-transform: scale(1, -1);
+              -ms-transform: scale(1, -1);
+                  transform: scale(1, -1); }
+  .feedback-box .rating {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+    border-left: solid 1px #e9eaeb; }
+    .feedback-box .rating h2 {
+      font: 700 1rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin: 0;
+      padding-bottom: 15px; }
+    .feedback-box .rating .rating-pos {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .feedback-box .rating .rating-pos i {
+        color: #ffdc2c;
+        font-size: 12px; }
+      .feedback-box .rating .rating-pos span {
+        padding-left: 10px;
+        font: 700 0.875rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
 .desc-availability-body {
   margin-left: 25px;
   width: 50%; }
@@ -685,7 +811,8 @@
       font: 400 0.812rem "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #333;
       border-bottom: dotted 1px #333;
-      padding-bottom: 3px; }
+      padding-bottom: 3px;
+      cursor: pointer; }
   .desc-availability-body form {
     display: -webkit-box;
     display: -webkit-flex;
