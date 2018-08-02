@@ -93,6 +93,7 @@
     }
   }
 }
+
 .product-photo {
   padding: 0 50px;
 }
@@ -206,6 +207,7 @@
     }
   }
 }
+
 .other-shop {
   display: flex;
   flex-direction: column;
@@ -241,6 +243,7 @@
     }
   }
 }
+
 .other-shop:before {
   content: 'Похожий товар';
   position: absolute;
@@ -250,6 +253,7 @@
   font: 1.37rem $font-montserrat;
   z-index: 2;
 }
+
 .other-shop:after {
   content: 'Показать все похожие товары';
   font: .812rem $font-montserrat;
@@ -266,9 +270,11 @@
 .product-slider-title {
   font: 1.75rem $font-montserrat;
 }
+
 .product-slider1 {
   padding: 15px 0;
 }
+
 .product-slide {
   text-decoration: none;
   padding: 0 10px;
@@ -307,6 +313,7 @@
     }
   }
 }
+
 .arrow {
   position: absolute;
   top: -45px;
@@ -317,12 +324,165 @@
   justify-content: center;
   align-items: center;
 }
+
 .icon-left-open {
   right: 45px;
 }
+
 .icon-right-open {
   right: 0;
 }
+
 .arrow:active {
   background-color: #3c3f43;
+}
+
+.desc-main-title {
+  list-style: none;
+  margin: 30px 0 50px 0;
+  padding: 20px 0;
+  border-bottom: solid 2px #e9eaeb;
+  display: flex;
+  li {
+    padding-right: 45px;
+    a {
+      text-decoration: none;
+      color: #777777;
+      padding: 20px 0;
+      font: 700 1rem $font-montserrat;
+    }
+    a:hover {
+      color: #fb2539;
+      border-bottom: solid 2px #fb2539;
+    }
+  }
+}
+
+.desc-title {
+  font: 700 1.25rem $font-montserrat;
+  color: #333;
+}
+
+.desc-main-wrapper {
+  display: flex;
+}
+
+.character-body {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    li {
+      padding: 20px;
+      font: .812rem $font-montserrat;
+    }
+    li:nth-child(odd) {
+      background-color: #eff0f3;
+    }
+  }
+}
+
+.character-other {
+  color: #333;
+  font: .812rem $font-montserrat;
+  border-bottom: solid 1px #c1c1c1;
+  margin-left: 20px;
+  padding-bottom: 2px;
+  position: relative;
+  i:before {
+    color: #fb2539;
+    font-size: 10px;
+    position: absolute;
+    margin-left: -15px;
+    bottom: 2px;
+  }
+}
+
+.desc-body {
+  padding: 40px 0;
+  p {
+    font: .875rem/1.57 $font-montserrat;
+    color: #333;
+  }
+}
+
+.desc-availability-body {
+  margin-left: 25px;
+  width: 50%;
+  .desc-availability {
+    padding: 20px;
+    border: solid 1px #e9eaeb;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      font: .812rem $font-montserrat;
+      color: #333;
+    }
+    h2 {
+      font: .937rem $font-montserrat;
+      color: #999999;
+    }
+    span {
+      font: 700 1.875rem $font-montserrat;
+      color: #999;
+      padding: 10px 0;
+      span {
+        font-size: 1rem;
+        padding-left: 5px;
+      }
+    }
+    .availability-button {
+      display: flex;
+      align-items: center;
+      .av-button {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font: 700 .875rem $font-montserrat;
+        padding: 5px 15px;
+        margin: 20px 0;
+        text-align: center;
+        border: solid 2px #fb2539;
+      }
+      i {
+        font-size: 18px;
+        color: #333;
+        padding: 0 20px;
+      }
+    }
+    .desc-other-shop {
+      font: 400 .812rem $font-montserrat;
+      color: #333;
+      border-bottom: dotted 1px #333;
+      padding-bottom: 3px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ddefe7;
+    h2 {
+      font: 700 .875rem $font-montserrat;
+      color: #333;
+      i:before {
+        font-size: 12px;
+        color: #6eb996;
+        padding-right: 10px;
+      }
+    }
+    select {
+      background: white;
+      border: none;
+      outline: none;
+      color: #333;
+      padding: 20px;
+    }
+  }
 }
