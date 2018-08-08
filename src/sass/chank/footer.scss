@@ -1,0 +1,125 @@
+$font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+footer {
+  background-color: #474a4e;
+}
+
+.footer-wrapper {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.footer-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px ;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #595c5f;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-left-box {
+    h2 {
+      font: 700 1rem/1.375 $font-montserrat;
+      color: #c8c9ca;
+      margin: 10px 0;
+    }
+    a {
+      font: .875rem/1.85 $font-montserrat;
+      color: #a1a2a3;
+      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+    }
+    div {
+      display: flex;
+      ul:first-child {
+        padding-right: 30px;
+      }
+    }
+  }
+  .footer-left-box:nth-child(-n+3) {
+    margin-right: 30px;
+  }
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font: .875rem/1.57 $font-montserrat;
+    color: #7f8183;
+    a {
+      text-decoration: none;
+      font: 700 .914rem $font-montserrat;
+      color: #dadbdc;
+    }
+  }
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px 30px 30px;
+  box-sizing: border-box;
+  background-color: #3c3f43;
+  a {
+    text-decoration: none;
+    font: 700 1.42rem/1.22 $font-montserrat;
+    color: #d2d3d4;
+  }
+  span {
+    font: .75rem $font-montserrat;
+    color: #77797c;
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+  p {
+    font: .875rem $font-montserrat;
+    color: #9e9fa1;
+    white-space: nowrap;
+  }
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: solid 1px #3e6eb1;
+        border-radius: 100%;
+      }
+      a:before {
+        display: block;
+        font-size: 14px;
+        margin: 0 auto;
+        color: #3e6eb1;
+      }
+      a:hover {
+        color: #dc4e41;
+        border: solid 1px #dc4e41;
+      }
+      a:hover:before {
+        color: #dc4e41;
+      }
+      .icon-vk:before {
+        font-size: 12px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
