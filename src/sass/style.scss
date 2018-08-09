@@ -1,5 +1,5 @@
 @import 'chank/header';
-
+/*Main page*/
 .page-wrapper {
   padding-bottom: 60px;
 }
@@ -11,6 +11,7 @@
 
 .catalog {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -31,12 +32,9 @@
 }
 
 .product-name {
-  display: flex;
-  justify-content: space-between;
   .name {
     font: 700 2.125rem $font-montserrat;
     color: #333;
-    margin: 0;
   }
   .vendor {
     font: .812rem $font-montserrat;
@@ -55,18 +53,16 @@
 }
 
 .product-body {
-  display: flex;
   padding: 25px 0;
+  text-align: center;
 }
 
 .product-box {
-  margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  height: 220px;
-  width: 550px;
   li {
     margin: 5px;
     width: 65px;
@@ -103,12 +99,11 @@
 }
 
 .availability-title {
-  display: flex;
   margin: 0;
   padding: 0 0 40px 0;
   list-style: none;
   li {
-    padding-right: 25px;
+    padding: 10px 0;
     color: #333;
     font: .812rem $font-montserrat;
     a {
@@ -122,9 +117,6 @@
         margin: 4px 0 0 -20px;
       }
     }
-  }
-  li + li {
-    padding-right: 45px;
   }
 }
 
@@ -164,28 +156,23 @@
   }
 }
 
-.availability-box {
-  display: flex;
-}
-
 .availability-massage {
-  display: flex;
-  flex-direction: column;
   background-color: #f7f7f9;
   padding: 15px 40px;
+  margin: 30px 0;
   h1 {
-    margin: 0;
     color: #999;
     font: 700 2.5rem $font-montserrat;
     span {
       font: 400 1.25rem $font-montserrat;
     }
   }
+
   .availability-button {
     text-decoration: none;
     color: #333;
     font: 700 1.125rem $font-montserrat;
-    padding: 14px 30px;
+    padding: 14px;
     margin: 15px 0;
     text-align: center;
     border: solid 2px #fb2539;
@@ -193,6 +180,7 @@
   p {
     font: .75rem $font-montserrat;
     color: #777;
+    margin: 30px;
   }
   .share-buttons {
     padding-top: 20px;
@@ -218,7 +206,6 @@
   align-items: center;
   padding: 40px;
   border: solid 1px #e9eaeb;
-  margin-left: 40px;
   position: relative;
   z-index: 1;
   div {
@@ -268,6 +255,53 @@
   z-index: 2;
   bottom: -5px;
   cursor: pointer;
+}
+
+@media (min-width: 1180px) {
+  .product-name {
+    display: flex;
+    justify-content: space-between;
+    .name {
+      margin: 0;
+    }
+  }
+  .product-body {
+    display: flex;
+    text-align: left;
+  }
+  .product-box {
+    height: 220px;
+    width: 550px;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .availability-title {
+    display: flex;
+    li {
+      padding-right: 25px;
+    }
+    li + li {
+      padding-right: 45px;
+    }
+  }
+  .availability-box {
+    display: flex;
+  }
+  .availability-massage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .other-shop {
+    margin-left: 40px;
+  }
 }
 
 .product-slider-title {
@@ -346,9 +380,9 @@
   margin: 30px 0 50px 0;
   padding: 20px 0;
   border-bottom: solid 2px #e9eaeb;
-  display: flex;
+
   li {
-    padding-right: 45px;
+    padding: 20px;
     a {
       text-decoration: none;
       color: #777777;
@@ -361,26 +395,32 @@
     }
   }
 }
-
-.desc-title {
-  font: 700 1.25rem $font-montserrat;
-  color: #333;
+@media (min-width: 1180px) {
+  .desc-main-title {
+    display: flex;
+    li {
+      padding: 0 45px 0 0;
+    }
+  }
 }
 
 .desc-main-wrapper {
   display: flex;
 }
+.desc-title {
+  font: 700 1.25rem $font-montserrat;
+  color: #333;
+}
 
 .character-body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   margin-bottom: 10px;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 50%;
     li {
       padding: 20px;
       font: .812rem $font-montserrat;
@@ -390,7 +430,14 @@
     }
   }
 }
-
+@media (min-width: 1180px) {
+  .character-body {
+    justify-content: space-between;
+    ul {
+      width: 50%;
+    }
+  }
+}
 .character-other {
   text-decoration: none;
   color: #333;
@@ -421,7 +468,6 @@
 
 .feedback-buttonns {
   display: flex;
-  justify-content: space-between;
   padding: 30px 0;
   div {
     display: flex;
@@ -444,6 +490,11 @@
     border: 0;
   }
 }
+@media (min-width: 1180px) {
+  .feedback-buttonns {
+    justify-content: space-between;
+  }
+}
 
 .feedback-body {
   padding-bottom: 15px;
@@ -451,6 +502,7 @@
   overflow: hidden;
   display: none;
 }
+
 .feedback-body.active {
   display: block;
 }
@@ -496,8 +548,7 @@
       padding-right: 10px;
     }
     div {
-      display: flex;
-      justify-content: space-between;
+      padding: 10px 0;
       a {
         text-decoration: none;
         color: #333;
@@ -536,6 +587,25 @@
     }
   }
 }
+@media (min-width: 1180px) {
+  .feedback {
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .feedback {
+    div {
+     span {
+       display: flex;
+       flex-direction: column;
+     }
+    }
+  }
+}
 
 .rating-pos {
   display: flex;
@@ -547,8 +617,8 @@
 }
 
 .video-review {
-  display: flex;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .first-review, .second-review {
@@ -563,8 +633,13 @@
   }
 }
 
-.first-review {
-  padding-right: 40px;
+@media (min-width: 1180px) {
+  .video-review {
+    display: flex;
+  }
+  .first-review {
+    padding-right: 40px;
+  }
 }
 
 .article-slider {
@@ -594,19 +669,13 @@
     background-color: #3c3f43;
   }
 }
-.article-slider {
-  width: 73%;
-}
+
 .article-slide {
   text-decoration: none;
-  img {
-    float: left;
-    padding-right: 30px;
-  }
   .article-slide-box {
-    padding: 50px 20px;
+
     border: solid 1px #e9eaeb;
-    margin: 0 100px;
+
     height: 100%;
     span {
       font: .75rem $font-montserrat;
@@ -623,21 +692,42 @@
     }
   }
 }
+@media (min-width: 1180px) {
+  .article-slide {
+    img {
+      float: left;
+      padding-right: 30px;
+    }
+  }
+
+  .article-slider {
+    width: 73%;
+  }
+  .article-slide-box {
+    padding: 50px 20px;
+    margin: 0 100px;
+  }
+}
 
 .certificate {
-  width: 73%;
+  text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+}
+
+@media (min-width: 1180px) {
+  .certificate {
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .also-buy {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
+  padding: 0 0 50px 0 ;
   a {
     display: block;
     box-sizing: border-box;
@@ -651,10 +741,17 @@
     border: solid 1px #fb2539;
   }
 }
+@media (min-width: 1180px) {
+  .also-buy {
+    padding: 0;
+    display: flex;;
+  }
+}
 
 .desc-availability-body {
   padding-left: 30px;
   width: 80%;
+  display: none;
   .desc-availability {
     padding: 20px;
     border: solid 1px #e9eaeb;
@@ -737,6 +834,11 @@
     }
   }
 }
+@media (min-width: 1180px) {
+  .desc-availability-body {
+    display: block;
+  }
+}
 
 .product-slide {
   .buy-button {
@@ -772,8 +874,6 @@
 }
 
 .other-goods {
-  display: flex;
-  align-items: center;
   .you-car {
     padding-left: 20px;
     background: url("../img/arrow.png") no-repeat right;
@@ -800,6 +900,12 @@
   i:before {
     color: #fb2539;
     padding-left: 5px;
+  }
+}
+@media (min-width: 1180px) {
+  .other-goods {
+    display: flex;
+    align-items: center;
   }
 }
 

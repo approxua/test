@@ -9,13 +9,10 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
     cursor: pointer;
   }
   background-color: #eff0f3;
-  height: 44px;
   .header-top {
     font: .812rem $font-montserrat;
-    display: flex;
-    justify-content: space-between;
     ul {
-      display: flex;
+      text-align: center;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -31,24 +28,29 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
       li {
         padding-right: 25px;
       }
+      li:last-child {
+        padding: 0;
+      }
       a:hover {
         color: #333;
       }
     }
     .header-info {
-      width: 50%;
-      height: 44px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      .header-city {
-        background: url("../img/arrow.png") no-repeat right;
-        height: 44px;
-        width: 70px;
+      justify-content: space-between;
+      .header-city-wrapper {
+        display: flex;
+        align-items: center;
         span {
           color: #555;
           padding-right: 10px;
         }
+      }
+      .header-city {
+        background: url("../img/arrow.png") no-repeat right;
+        height: 44px;
+        width: 70px;
         select {
           background: transparent;
           border: none;
@@ -63,6 +65,7 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
       }
       .header-lang {
+        display: flex;
         .active-lang {
           border-bottom: 2px solid #fb2539;
           color: #333;
@@ -78,6 +81,7 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
       }
     }
     .header-user {
+      display: flex;
       a {
         padding: 10px;
       }
@@ -93,15 +97,32 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
   }
 }
+@media (min-width: 1180px) {
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-info {
+    width: 50%;
+  }
+}
+@media (min-width: 680px) {
+  .header-top {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
 
 .header-middle {
-  display: flex;
-  justify-content: space-between;
   background-color: white;
+  text-align: center;
   form {
-    margin: auto 0;
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     div {
       background: url("../img/arrow.png") no-repeat right;
       width: 130px;
@@ -110,6 +131,7 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
   .header-logo {
     a {
+      margin: 0 auto;
       display: block;
       height: 112px;
       width: 234px;
@@ -118,9 +140,9 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
   .header-search {
     width: 350px;
-    height: 44px;
     border: solid 1px #c2c2c2;
     border-radius: 25px;
+    padding: 0;
     input {
       border: none;
       padding: 15px 0;
@@ -158,12 +180,17 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
     outline: none;
     cursor: pointer;
   }
+  div {
+    display: flex;
+    justify-content: center;
+  }
   a {
     margin: auto 0;
     text-decoration: none;
     color: #333;
     font: .75rem $font-montserrat;
     position: relative;
+    padding: 0 10px;
     i:before {
       padding-bottom: 5px;
       display: block;
@@ -182,9 +209,28 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
       background-color: #fb2539;
       border: solid 2px #fb2539;
       border-radius: 100px;
-      right: 14px;
+      right: 23px;
       top: -5px;
     }
+  }
+}
+@media (min-width: 1180px) {
+  .header-middle {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1179px) {
+  .header-middle {
+    div {
+      padding-bottom: 20px;
+    }
+  }
+  .header-logo {
+    padding-bottom: 20px;
+  }
+  form {
+    padding: 20px 0;
   }
 }
 
@@ -194,8 +240,6 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
     li {
       width: 100%;
       height: 54px;
@@ -221,9 +265,18 @@ $font-montserrat: 'Montserrat', Arial, "Helvetica Neue", Helvetica, sans-serif;
         justify-content: space-around;
         text-transform: none;
       }
+    }
+  }
+}
+@media (min-width: 1180px) {
+  .header-bottom {
+    ul {
+      display: flex;
+      justify-content: space-between;
       .active-menu {
         width: 234px;
       }
     }
   }
+
 }

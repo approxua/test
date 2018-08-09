@@ -2,12 +2,52 @@ $(function () {
     $('.product-slider1').slick({
         slidesToShow: 5,
         prevArrow: '<i class="icon-left-open arrow">',
-        nextArrow: '<i class="icon-right-open arrow">'
+        nextArrow: '<i class="icon-right-open arrow">',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
     $('.other-goods-slider').slick({
         slidesToShow: 5,
         prevArrow: '<i class="icon-left-open arrow">',
-        nextArrow: '<i class="icon-right-open arrow">'
+        nextArrow: '<i class="icon-right-open arrow">',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
     $('.article-slider').slick({
         slidesToShow: 1,
