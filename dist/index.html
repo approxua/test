@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- Begin Header -->
-<div class="header-wrapper">
+<header class="header-wrapper">
   <div class="header-top-wrapper">
     <div class="container">
       <div class="header-top">
@@ -44,11 +44,13 @@
               <a href="#">Укр</a>
             </li>
           </ul>
-          <span>Ваш город:</span>
-          <div class="header-city">
-            <select name="city" id="city">
-              <option value="Киев">Киев</option>
-            </select>
+          <div class="header-city-wrapper">
+            <span>Ваш город:</span>
+            <div class="header-city">
+              <select name="city" id="city">
+                <option value="Киев">Киев</option>
+              </select>
+            </div>
           </div>
           <ul class="header-user">
             <li>
@@ -87,10 +89,12 @@
         </div>
         <button class="header-backcall">Обратный звонок</button>
       </form>
-      <a href="#"><i class="icon-warehouse"></i>Гараж</a>
-      <a href="#"><i class="icon-heart-empty"></i>Избранное</a>
-      <a href="#"><i class="icon-balance"></i>Сравнение</a>
-      <a href="#"><i class="icon-basket"></i>Корзина</a>
+      <div>
+        <a href="#"><i class="icon-warehouse"></i>Гараж</a>
+        <a href="#"><i class="icon-heart-empty"></i>Избранное</a>
+        <a href="#"><i class="icon-balance"></i>Сравнение</a>
+        <a href="#"><i class="icon-basket"></i>Корзина</a>
+      </div>
     </div>
   </div>
   <div class="header-bottom">
@@ -129,509 +133,645 @@
       </ul>
     </div>
   </div>
-</div>
+</header>
 <!-- End Header -->
 <!-- Begin main page -->
-<div class="container">
-  <!-- Begin main product -->
-  <ul class="catalog">
-    <li>
-      <a href="#">Главная</a>
-    </li>
-    <li class="icon-angle-right">
-      <a href="#">Запчасти и расходники</a>
-    </li>
-    <li class="icon-angle-right">
-      <a href="#">Масло</a>
-    </li>
-    <li class="icon-angle-right">
-      <a href="#">Моторное масло</a>
-    </li>
-    <li class="icon-angle-right">
-      <a href="#">Mobil</a>
-    </li>
-    <li class="icon-angle-right">
-      <a href="#">Моторное масло MOBIL Super 3000 X1 5W-40, 4л</a>
-    </li>
-  </ul>
-  <div class="product-name">
-    <h1 class="name">Моторное масло MOBIL Super 3000 X1 5W-40, 4л</h1>
-    <div class="vendor">Код товара : 39207</div>
-  </div>
-  <div class="main-product">
-    <div class="product-body">
-      <ul class="product-box">
-        <li><a href="#"><img src="img/small-oil.png" alt="oil"></a></li>
-        <li><a href="#"><i class="icon-coub"></i></a></li>
-        <li><a href="#"><i class="icon-play"></i><img src="img/small.jpg" alt="oil"></a></li>
-        <li><a href="#"><img src="img/small-oil2.png" alt="oil"></a></li>
-        <li><a href="#"><img src="img/small-oil2.png" alt="oil"></a></li>
-      </ul>
-      <div class="product-photo">
-        <a href="#"><img src="img/big-oil.png" alt="oil"></a>
-      </div>
-      <div class="availability-body">
-        <ul class="availability-title">
-          <li>Нет в наличии</li>
-          <li class="star-rating">
-            <div class="star-rating__wrap">
-              <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-5"
-                     title="5 из 5 звезд"></label>
-              <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-4"
-                     title="4 из 5 звезд"></label>
-              <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-3"
-                     title="3 из 5 звезд"></label>
-              <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-2"
-                     title="2 из 5 звезд"></label>
-              <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-              <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-1"
-                     title="1 из 5 звезд"></label>
-            </div>
-          </li>
-          <li><a href="#"><i class="icon-chat"></i>3 отзыва</a></li>
-          <li><a href="#"><i class="icon-question"></i>4 вопроса</a></li>
+<div class="page-wrapper">
+  <div class="container">
+    <!-- Begin main product -->
+    <ul class="catalog">
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li class="icon-angle-right">
+        <a href="#">Запчасти и расходники</a>
+      </li>
+      <li class="icon-angle-right">
+        <a href="#">Масло</a>
+      </li>
+      <li class="icon-angle-right">
+        <a href="#">Моторное масло</a>
+      </li>
+      <li class="icon-angle-right">
+        <a href="#">Mobil</a>
+      </li>
+      <li class="icon-angle-right">
+        <a href="#">Моторное масло MOBIL Super 3000 X1 5W-40, 4л</a>
+      </li>
+    </ul>
+    <div class="product-name">
+      <h1 class="name">Моторное масло MOBIL Super 3000 X1 5W-40, 4л</h1>
+      <span class="vendor">Код товара : 39207</span>
+    </div>
+    <div class="main-product">
+      <div class="product-body">
+        <ul class="product-box">
+          <li><a href="#"><img src="img/small-oil.png" alt="oil"></a></li>
+          <li><a href="#"><i class="icon-coub"></i></a></li>
+          <li><a href="#"><i class="icon-play"></i><img src="img/small.jpg" alt="oil"></a></li>
+          <li><a href="#"><img src="img/small-oil2.png" alt="oil"></a></li>
+          <li><a href="#"><img src="img/small-oil2.png" alt="oil"></a></li>
         </ul>
-        <div class="availability-box">
-          <div class="availability-massage">
-            <h1>
-              456 <span>грн</span>
-            </h1>
-            <a href="#" class="availability-button">
-              Сообщить о поступлении
-            </a>
-            <p>
-              ELF Tranself NFJ 75W-80 1л - Трансмиссионное масло
-              Тип масла: Трансмиссионное масло ; Тип основы масла: синтетическое масло; SAE: 75W-80; Емкость, л: 1 ELF
-              Tranself NFJ 75W-80 1л - Трансмиссионное масло Тип масла: Трансмиссионное масло ; Тип основы масла:
-              синтетическое масло; SAE: 75W-80; Емкость, л: 1
-            </p>
-            <div class="share-buttons">
-              <a href="#"><i class="icon-spread"></i>Поделитса</a>
-              <a href="#"><i class="icon-balance"></i>Сравнить</a>
-            </div>
-          </div>
-          <div class="other-shop">
-            <a href="#"><img src="img/other.png" alt="oil"></a>
-            <div>
-              <span><i class="icon-done"></i>В наличии</span>
+        <div class="product-photo">
+          <a href="#"><img src="img/big-oil.png" alt="oil"></a>
+        </div>
+        <div class="availability-body">
+          <ul class="availability-title">
+            <li>Нет в наличии</li>
+            <li class="star-rating">
+              <div class="star-rating__wrap">
+                <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-5"
+                       title="5 из 5 звезд"></label>
+                <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-4"
+                       title="4 из 5 звезд"></label>
+                <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-3"
+                       title="3 из 5 звезд"></label>
+                <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-2"
+                       title="2 из 5 звезд"></label>
+                <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                <label class="star-rating__ico icon-star-empty icon-star-1 " for="star-rating-1"
+                       title="1 из 5 звезд"></label>
+              </div>
+            </li>
+            <li><a href="#"><i class="icon-chat"></i>3 отзыва</a></li>
+            <li><a href="#"><i class="icon-question"></i>4 вопроса</a></li>
+          </ul>
+          <div class="availability-box">
+            <div class="availability-massage">
+              <h1>
+                456 <span>грн</span>
+              </h1>
+              <a href="#" class="availability-button">
+                Сообщить о поступлении
+              </a>
               <p>
-                Трансмиссионное масло CASTRO Manual EP 80W-90 1л
+                ELF Tranself NFJ 75W-80 1л - Трансмиссионное масло
+                Тип масла: Трансмиссионное масло ; Тип основы масла: синтетическое масло; SAE: 75W-80; Емкость, л: 1 ELF
+                Tranself NFJ 75W-80 1л - Трансмиссионное масло Тип масла: Трансмиссионное масло ; Тип основы масла:
+                синтетическое масло; SAE: 75W-80; Емкость, л: 1
               </p>
-              <a href="#">345<span>грн</span></a>
+              <div class="share-buttons">
+                <a href="#"><i class="icon-spread"></i>Поделитса</a>
+                <a href="#"><i class="icon-balance"></i>Сравнить</a>
+              </div>
+            </div>
+            <div class="other-shop">
+              <a href="#"><img src="img/other.png" alt="oil"></a>
+              <div>
+                <span><i class="icon-done"></i>В наличии</span>
+                <p>
+                  Трансмиссионное масло CASTRO Manual EP 80W-90 1л
+                </p>
+                <a href="#">345<span>грн</span></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End main product -->
-  <!-- Begin other product slider 1 -->
-  <h2 class="product-slider-title">Похожие товары</h2>
-  <div class="product-slider1">
-    <a href="#" class="product-slide">
-      <img src="img/other1.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
+    <!-- End main product -->
+    <!-- Begin other product slider 1 -->
+    <h2 class="product-slider-title">Похожие товары</h2>
+    <div class="product-slider1">
+      <a href="#" class="product-slide">
+        <img src="img/other1.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>104<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other2.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Shell Helix
+          HX7 10W-40 4 л</p>
+        <span>456<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other3.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Mobil Super
+          3000 X1 5W-40 4 л</p>
+        <span>268<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other4.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>105<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other5.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Shell Helix
+          HX7 10W-40 4 л</p>
+        <span>456<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other1.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>104<span>грн</span></span>
+      </a>
+    </div>
+    <!-- End other product slider 1 -->
+    <!-- Begin desc -->
+    <ul id="desc" class="desc-main-title">
+      <li><a href="#desc1">Характеристики</a></li>
+      <li><a href="#desc2">Описание</a></li>
+      <li><a href="#desc3">Отзывы и вопросы <span>(40)</span></a></li>
+      <li><a href="#desc4">Видеообзоры и статьи</a></li>
+      <li><a href="#desc5">Сертификаты</a></li>
+    </ul>
+    <h2 id="desc1" class="desc-title">Характеристики товара</h2>
+    <div class="desc-main-wrapper">
+      <div class="desc-main">
+        <div class="character-body">
+          <ul>
+            <li>Класс вязкости:</li>
+            <li>сСт при 40ºC:</li>
+            <li>сСт при 100ºC:</li>
+            <li>Зольность сульфатная, % мас., ASTM D 874:</li>
+            <li>Содержание фосфора:</li>
+            <li>Температура вспышки, ºC, ASTM D 92:</li>
+            <li>Температура застывания, ºC, ASTM D 97:</li>
+            <li>Класс вязкости:</li>
+            <li>сСт при 40ºC:</li>
+            <li>сСт при 100ºC:</li>
+          </ul>
+          <ul>
+            <li>5W-40</li>
+            <li>84</li>
+            <li>14</li>
+            <li>1,1</li>
+            <li>0,0095</li>
+            <li>222</li>
+            <li>-39</li>
+            <li>5W-40</li>
+            <li>84</li>
+            <li>14</li>
+          </ul>
+        </div>
+        <div class="desc-body">
+          <h2 id="desc2" class="desc-title">Описание товара</h2>
+          <p>Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок
+            службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в
+            широком диапазоне температур. <br> <br>
+            Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть
+            уверены
+            в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям. <br>
+            Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок
+            службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в
+            широком диапазоне температур. <br> <br>
+            Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть
+            уверены
+            в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям.
+          </p>
+        </div>
+        <div class="feedback-wrapper">
+          <div id="desc3" class="feedback-buttonns">
+            <div>
+              <a href="#" class="active">Отзывы (10)</a>
+              <a href="#">Вопросы (7)</a>
+            </div>
+            <a href="#" class="send-question">Оставить отзыв</a>
+          </div>
+          <div class="feedback-body active">
+            <div class="feedback-box">
+              <div class="feedback">
+                <h2>
+                  Владимир
+                  <span>04.07.2016</span>
+                </h2>
+                <p>
+                  У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
+                  також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
+                  тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист
+                  від
+                  бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
+                </p>
+                <span class="like">
+              Достоинства:
+              <span>
+                хорошая батарея, и вообще неплохой смартфон
+              </span>
+            </span>
+                <span class="dislike">
+              Недостатки:
+              <span>
+                не обнаружены
+              </span>
+            </span>
+                <div>
+                  <div>
+                    <a href="#">1 ответ</a>
+                    <a href="#">Ответить</a>
+                  </div>
+                  <span>
+                Был ли вам полезен этот отзыв:
+                <i class="icon-like like">14</i>
+                <i class="icon-like dislike scale">3</i>
+              </span>
+                </div>
+              </div>
+              <div class="rating">
+                <h2>Оценка</h2>
+                <div class="rating-pos">
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-empty"></i>
+                  <span>4,0</span>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-box">
+              <div class="feedback">
+                <h2>
+                  Панас
+                  <span>04.07.2016</span>
+                </h2>
+                <p>
+                  У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
+                  також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
+                  тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист
+                  від
+                  бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
+                </p>
+                <span class="like">
+              Достоинства:
+              <span>
+                хорошая батарея, и вообще неплохой смартфон
+              </span>
+            </span>
+                <span class="dislike">
+              Недостатки:
+              <span>
+                не обнаружены
+              </span>
+            </span>
+                <div>
+                  <div>
+                    <a href="#">1 ответ</a>
+                    <a href="#">Ответить</a>
+                  </div>
+                  <span>
+                Был ли вам полезен этот отзыв:
+                <i class="icon-like like">14</i>
+                <i class="icon-like dislike scale">3</i>
+              </span>
+                </div>
+              </div>
+              <div class="rating">
+                <h2>Оценка</h2>
+                <div class="rating-pos">
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-empty"></i>
+                  <i class="icon-star-empty"></i>
+                  <span>3,0</span>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-box">
+              <div class="feedback">
+                <h2>
+                  Анастасия
+                  <span>04.07.2016</span>
+                </h2>
+                <p>
+                  У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
+                  також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
+                  тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист
+                  від
+                  бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
+                </p>
+                <span class="like">
+              Достоинства:
+              <span>
+                хорошая батарея, и вообще неплохой смартфон
+              </span>
+            </span>
+                <span class="dislike">
+              Недостатки:
+              <span>
+                не обнаружены
+              </span>
+            </span>
+                <div>
+                  <div>
+                    <a href="#">1 ответ</a>
+                    <a href="#">Ответить</a>
+                  </div>
+                  <span>
+                Был ли вам полезен этот отзыв:
+                <i class="icon-like like">14</i>
+                <i class="icon-like dislike scale">3</i>
+              </span>
+                </div>
+              </div>
+              <div class="rating">
+                <h2>Оценка</h2>
+                <div class="rating-pos">
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <span>5,0</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="feedback-box">
+              <div class="feedback">
+                <h2>
+                  Владимир
+                  <span>04.07.2016</span>
+                </h2>
+                <p>
+                  У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
+                  також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
+                  тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист
+                  від
+                  бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
+                </p>
+                <span class="like">
+              Достоинства:
+              <span>
+                хорошая батарея, и вообще неплохой смартфон
+              </span>
+            </span>
+                <span class="dislike">
+              Недостатки:
+              <span>
+                не обнаружены
+              </span>
+            </span>
+                <div>
+                  <div>
+                    <a href="#">1 ответ</a>
+                    <a href="#">Ответить</a>
+                  </div>
+                  <span>
+                Был ли вам полезен этот отзыв:
+                <i class="icon-like like">14</i>
+                <i class="icon-like dislike scale">3</i>
+              </span>
+                </div>
+              </div>
+              <div class="rating">
+                <h2>Оценка</h2>
+                <div class="rating-pos">
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-empty"></i>
+                  <span>4,0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-body">
+            <div class="feedback-box">
+              <div class="feedback">
+                <h2>
+                  Владимир
+                  <span>04.07.2016</span>
+                </h2>
+                <p>
+                  У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
+                  також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
+                  тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист
+                  від
+                  бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
+                </p>
+                <span class="like">
+              Достоинства:
+              <span>
+                хорошая батарея, и вообще неплохой смартфон
+              </span>
+            </span>
+                <span class="dislike">
+              Недостатки:
+              <span>
+                не обнаружены
+              </span>
+            </span>
+                <div>
+                  <div>
+                    <a href="#">1 ответ</a>
+                    <a href="#">Ответить</a>
+                  </div>
+                  <span>
+                Был ли вам полезен этот отзыв:
+                <i class="icon-like like">14</i>
+                <i class="icon-like dislike scale">3</i>
+              </span>
+                </div>
+              </div>
+              <div class="rating">
+                <h2>Оценка</h2>
+                <div class="rating-pos">
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-1"></i>
+                  <i class="icon-star-empty"></i>
+                  <span>4,0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 id="desc4" class="desc-title">Видеообзоры</h2>
+        <div class="video-review">
+          <div class="first-review">
+            <iframe width="448" height="294" src="https://www.youtube.com/embed/MAdUVFVOpPk" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="second-review">
+            <iframe width="448" height="294" src="https://www.youtube.com/embed/hsPOYGSqAL8" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>104<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other2.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
+      <div class="desc-availability-body">
+        <div class="desc-availability">
+          <img src="img/small-oil1.png" alt="oil">
+          <p>Нет в наличии</p>
+          <h2>Моторное масло Liqui Moly TOP
+            TEC 4100 5W-40 4</h2>
+          <span>326<span>грн</span></span>
+          <div class="availability-button">
+            <a href="#" class="av-button">
+              Сообщить о поступлении
+            </a>
+            <a href="#"><i class="icon-balance"></i></a>
+          </div>
+          <span class="desc-other-shop">
+          Показать все похожие товары
+        </span>
+        </div>
+        <div class="you-car">
+          <h2><i class="icon-done"></i>Товар подходит к вашему авто:</h2>
+          <div>
+            <select name="car" id="car">
+              <option value="Volkswagen Golf, 1.9">Volkswagen Golf, 1.9</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <p>Моторное масло Shell Helix
-        HX7 10W-40 4 л</p>
-      <span>456<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
+    </div>
+    <h2 class="desc-title">
+      Статьи (2)
+    </h2>
+    <div class="article-slider">
+      <a href="#" class="article-slide">
+        <img src="img/navigator-slide.jpg" alt="navigator">
+        <div class="article-slide-box">
+          <span>16 августа 2016</span>
+          <h2>
+            Подробный обзор и выявление
+            недостатков навигатора
+            DriveAssist 50LMT
+          </h2>
+          <p>
+            Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые
+            автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...
+        </div>
+      </a>
+      <div class="article-slide">
+        <img src="img/navigator-slide.jpg" alt="navigator">
+        <div class="article-slide-box">
+          <span>16 августа 2016</span>
+          <h2>
+            Подробный обзор и выявление
+            недостатков навигатора
+            DriveAssist 50LMT
+          </h2>
+          <p>
+            Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые
+            автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ...
+        </div>
+      </div>
+    </div>
+
+    <h2 id="desc5" class="desc-title">
+      Сертификаты соответствия
+    </h2>
+    <ul class="certificate">
+      <li><a href="#"><img src="img/certificate1.jpg" alt="certificate"></a></li>
+      <li><a href="#"><img src="img/certificate2.jpg" alt="certificate"></a></li>
+      <li><a href="#"><img src="img/certificate3.jpg" alt="certificate"></a></li>
+      <li><a href="#"><img src="img/certificate4.jpg" alt="certificate"></a></li>
+    </ul>
+    <!-- End desc -->
+    <!-- Begin also shop -->
+    <h2 class="product-slider-title">
+      С этим товаром так же покупают:
+    </h2>
+    <ul class="also-buy">
+      <li>
+        <a href="#">Омыватели</a>
+      </li>
+      <li>
+        <a href="#">Очистители</a>
+      </li>
+      <li>
+        <a href="#">Топливные фильтры</a>
+      </li>
+      <li>
+        <a href="#">Моторное масло</a>
+      </li>
+      <li>
+        <a href="#">Инструменты для авто</a>
+      </li>
+    </ul>
+    <div class="product-slider1">
+      <a href="#" class="product-slide">
+        <img src="img/other1.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>104<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other2.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>456<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
+          </div>
+        </div>
+      </a><a href="#" class="product-slide">
       <img src="img/other3.png" alt="oil">
       <div>
         <span class="article-code">Код товара : 39207</span>
         <span class="availability"><i class="icon-done"></i>В наличии</span>
       </div>
-      <p>Моторное масло Mobil Super
-        3000 X1 5W-40 4 л</p>
+      <p>Моторное масло Castrol
+        Magnatec 10W-40 A3/B4 4 л</p>
       <span>268<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other4.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>105<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other5.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Shell Helix
-        HX7 10W-40 4 л</p>
-      <span>456<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other1.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>104<span>грн</span></span>
-    </a>
-  </div>
-  <!-- End other product slider 1 -->
-  <!-- Begin desc -->
-  <ul class="desc-main-title">
-    <li><a href="#">Характеристики</a></li>
-    <li><a href="#">Описание</a></li>
-    <li><a href="#">Отзывы и вопросы <span>(40)</span></a></li>
-    <li><a href="#">Видеообзоры и статьи</a></li>
-    <li><a href="#">Сертификаты</a></li>
-  </ul>
-  <h2 class="desc-title">Характеристики товара</h2>
-  <div class="desc-main-wrapper">
-    <div class="desc-main">
-      <div class="character-body">
-        <ul>
-          <li>Класс вязкости:</li>
-          <li>сСт при 40ºC:</li>
-          <li>сСт при 100ºC:</li>
-          <li>Зольность сульфатная, % мас., ASTM D 874:</li>
-          <li>Содержание фосфора:</li>
-          <li>Температура вспышки, ºC, ASTM D 92:</li>
-          <li>Температура застывания, ºC, ASTM D 97:</li>
-        </ul>
-        <ul>
-          <li>5W-40</li>
-          <li>84</li>
-          <li>14</li>
-          <li>1,1</li>
-          <li>0,0095</li>
-          <li>222</li>
-          <li>-39</li>
-        </ul>
-      </div>
-      <span class="character-other">
-        <i class="icon-down-open"></i>
-        Показать все характеристики
-      </span>
-      <div class="desc-body">
-        <h2 class="desc-title">Описание товара</h2>
-        <p>Mobil Super 3000 X1 5W-40 представляет собой синтетическое моторное масло, обеспечивающее длительный срок
-          службы двигателей в автомобилях различных типов и годов выпуска, а также повышенный уровень их защиты в
-          широком диапазоне температур. <br> <br>
-          Продукты семейства Mobil Super 3000™ уже хорошо зарекомендовали себя на рынке, поэтому Вы можете быть уверены
-          в том, что эксплуатационные свойства Вашего автомобиля будут полностью соответствовать ожиданиям.
-        </p>
-        <a href="#" class="character-other">
-          <i class="icon-down-open"></i>
-          Подробние
-        </a>
-      </div>
-      <div class="review-buttons">
-        <div>
-          <a href="#">Отзывы (10)</a>
-          <a href="#">Вопросы (7)</a>
-        </div>
-        <a href="#" class="send-question">Оставить отзыв</a>
-      </div>
-      <div class="feedback-body">
-        <div class="feedback-box">
-          <div class="feedback">
-            <h2>
-              Владимир
-              <span>04.07.2016</span>
-            </h2>
-            <p>
-              У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
-              також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
-              тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від
-              бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
-            </p>
-            <span class="like">
-              Достоинства:
-              <span>
-                хорошая батарея, и вообще неплохой смартфон
-              </span>
-            </span>
-            <span class="dislike">
-              Недостатки:
-              <span>
-                не обнаружены
-              </span>
-            </span>
-            <div>
-              <div>
-                <a href="#">1 ответ</a>
-                <a href="#">Ответить</a>
-              </div>
-              <span>
-                Был ли вам полезен этот отзыв:
-                <i class="icon-like like">14</i>
-                <i class="icon-like dislike scale">3</i>
-              </span>
-            </div>
-          </div>
-          <div class="rating">
-            <h2>Оценка</h2>
-            <div class="rating-pos">
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-empty"></i>
-              <span>4,0</span>
-            </div>
-          </div>
-        </div>
-        <div class="feedback-box">
-          <div class="feedback">
-            <h2>
-              Панас
-              <span>04.07.2016</span>
-            </h2>
-            <p>
-              У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
-              також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
-              тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від
-              бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
-            </p>
-            <span class="like">
-              Достоинства:
-              <span>
-                хорошая батарея, и вообще неплохой смартфон
-              </span>
-            </span>
-            <span class="dislike">
-              Недостатки:
-              <span>
-                не обнаружены
-              </span>
-            </span>
-            <div>
-              <div>
-                <a href="#">1 ответ</a>
-                <a href="#">Ответить</a>
-              </div>
-              <span>
-                Был ли вам полезен этот отзыв:
-                <i class="icon-like like">14</i>
-                <i class="icon-like dislike scale">3</i>
-              </span>
-            </div>
-          </div>
-          <div class="rating">
-            <h2>Оценка</h2>
-            <div class="rating-pos">
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-empty"></i>
-              <i class="icon-star-empty"></i>
-              <span>3,0</span>
-            </div>
-          </div>
-        </div>
-        <div class="feedback-box">
-          <div class="feedback">
-            <h2>
-              Анастасия
-              <span>04.07.2016</span>
-            </h2>
-            <p>
-              У Huawei краща основна камера ніж в Lenovo при тому, що Lenovo ніколи не були сильні в плані фото, а
-              також у y6 pro кращий процесор (вища частота) і, як кажуть, краща оптимізація, що позитивно впливає на
-              тривалість роботи. До того ж, мені здається, що у Huawei менше проблем по якості ніж у Lenovo. Захист від
-              бризг у Р1m є скоріше рекламним трюком ніж реальним захистом та і потреба в ньому виникає не часто.
-            </p>
-            <span class="like">
-              Достоинства:
-              <span>
-                хорошая батарея, и вообще неплохой смартфон
-              </span>
-            </span>
-            <span class="dislike">
-              Недостатки:
-              <span>
-                не обнаружены
-              </span>
-            </span>
-            <div>
-              <div>
-                <a href="#">1 ответ</a>
-                <a href="#">Ответить</a>
-              </div>
-              <span>
-                Был ли вам полезен этот отзыв:
-                <i class="icon-like like">14</i>
-                <i class="icon-like dislike scale">3</i>
-              </span>
-            </div>
-          </div>
-          <div class="rating">
-            <h2>Оценка</h2>
-            <div class="rating-pos">
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <i class="icon-star-1"></i>
-              <span>5,0</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <span class="character-other">
-        <i class="icon-down-open"></i>
-        Показать все отзывы
-      </span>
-      <h2 class="desc-title">Видеообзоры</h2>
-      <div class="video-review">
-        <div class="first-review">
-          <div id="first"></div>
-          <div id="thumbnail_container" class="thumbnail_container">
-            <img class="thumbnail" id="thumbnail"/>
-          </div>
-          <a class="start-video"><i class="icon-play"></i>
-          </a>
-        </div>
-        <div class="second-review">
-          <div id="second"></div>
-          <div id="thumbnail_container-two" class="thumbnail_container">
-            <img class="thumbnail" id="thumbnail-two"/>
-          </div>
-          <a class="start-video-two"><i class="icon-play"></i>
-          </a>
-        </div>
-      </div>
-      <h2 class="desc-title">
-        Статьи (2)
-      </h2>
-      <div class="article-sleder">
-        <a href="#" class="article-slide">
-          <img src="img/navigator-slide.jpg" alt="navigator">
-          <div class="article-slide-box">
-            <span>16 августа 2016</span>
-            <h2>
-              Подробный обзор и выявление
-              недостатков навигатора
-              DriveAssist 50LMT
-            </h2>
-            <p>
-              Современные технологии буквально с каждым днем все глубже и глубже загоняют в могилу некоторые
-              автомобильные девайсы, взять к примеру GPS навигатор. Еще каких-то два-три ... года назад, он был
-          </div>
-        </a>
-      </div>
-
-
-      <h2 class="desc-title">
-        Сертификаты соответствия
-      </h2>
-      <ul class="certificate">
-        <li><a href="#"><img src="img/certificate1.jpg" alt="certificate"></a></li>
-        <li><a href="#"><img src="img/certificate2.jpg" alt="certificate"></a></li>
-        <li><a href="#"><img src="img/certificate3.jpg" alt="certificate"></a></li>
-        <li><a href="#"><img src="img/certificate4.jpg" alt="certificate"></a></li>
-      </ul>
-    </div>
-    <div class="desc-availability-body">
-      <div class="desc-availability">
-        <img src="img/small-oil1.png" alt="oil">
-        <p>Нет в наличии</p>
-        <h2>Моторное масло Liqui Moly TOP
-          TEC 4100 5W-40 4</h2>
-        <span>326<span>грн</span></span>
-        <div class="availability-button">
-          <a href="#" class="av-button">
-            Сообщить о поступлении
-          </a>
-          <a href="#"><i class="icon-balance"></i></a>
-        </div>
-        <span class="desc-other-shop">
-          Показать все похожие товары
-        </span>
-      </div>
-      <div class="you-car">
-        <h2><i class="icon-done"></i>Товар подходит к вашему авто:</h2>
-        <div>
-          <select name="car" id="car">
-            <option value="Volkswagen Golf, 1.9">Volkswagen Golf, 1.9</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End desc -->
-  <!-- Begin also shop -->
-  <h2 class="product-slider-title">
-    С этим товаром так же покупают:
-  </h2>
-  <ul class="also-buy">
-    <li>
-      <a href="#">Омыватели</a>
-    </li>
-    <li>
-      <a href="#">Очистители</a>
-    </li>
-    <li>
-      <a href="#">Топливные фильтры</a>
-    </li>
-    <li>
-      <a href="#">Моторное масло</a>
-    </li>
-    <li>
-      <a href="#">Инструменты для авто</a>
-    </li>
-  </ul>
-  <div class="product-slider1">
-    <a href="#" class="product-slide">
-      <img src="img/other1.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>104<span>грн</span></span>
-      <div class="buy-button">
-        <span>Купить</span>
-        <i class="icon-balance"></i>
-      </div>
-      <div>
-        <div class="rating-pos">
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
-        </div>
-      </div>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other2.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>456<span>грн</span></span>
       <div class="buy-button">
         <span>Купить</span>
         <i class="icon-balance"></i>
@@ -647,77 +787,7 @@
         </div>
       </div>
     </a><a href="#" class="product-slide">
-    <img src="img/other3.png" alt="oil">
-    <div>
-      <span class="article-code">Код товара : 39207</span>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-    </div>
-    <p>Моторное масло Castrol
-      Magnatec 10W-40 A3/B4 4 л</p>
-    <span>268<span>грн</span></span>
-    <div class="buy-button">
-      <span>Купить</span>
-      <i class="icon-balance"></i>
-    </div>
-    <div>
-      <div class="rating-pos">
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
-      </div>
-    </div>
-  </a><a href="#" class="product-slide">
-    <img src="img/other4.png" alt="oil">
-    <div>
-      <span class="article-code">Код товара : 39207</span>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-    </div>
-    <p>Моторное масло Castrol
-      Magnatec 10W-40 A3/B4 4 л</p>
-    <span>104<span>грн</span></span>
-    <div class="buy-button">
-      <span>Купить</span>
-      <i class="icon-balance"></i>
-    </div>
-    <div>
-      <div class="rating-pos">
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
-      </div>
-    </div>
-  </a><a href="#" class="product-slide">
-    <img src="img/other5.png" alt="oil">
-    <div>
-      <span class="article-code">Код товара : 39207</span>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-    </div>
-    <p>Моторное масло Castrol
-      Magnatec 10W-40 A3/B4 4 л</p>
-    <span>456<span>грн</span></span>
-    <div class="buy-button">
-      <span>Купить</span>
-      <i class="icon-balance"></i>
-    </div>
-    <div>
-      <div class="rating-pos">
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
-      </div>
-    </div>
-  </a>
-    <a href="#" class="product-slide">
-      <img src="img/other1.png" alt="oil">
+      <img src="img/other4.png" alt="oil">
       <div>
         <span class="article-code">Код товара : 39207</span>
         <span class="availability"><i class="icon-done"></i>В наличии</span>
@@ -739,231 +809,372 @@
           <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
         </div>
       </div>
-    </a>
-  </div>
-  <div class="other-goods">
-    <h2 class="product-slider-title">
-      Покупатели выбирают для:
-    </h2>
-    <div class="you-car">
-      <select name="car" id="cars">
-        <option value="Volkswagen Golf, 1.9">Volkswagen Golf, 1.9</option>
-      </select>
-    </div>
-  </div>
-  <div class="product-slider1">
-    <a href="#" class="product-slide">
-      <img src="img/goods1.png" alt="oil">
+    </a><a href="#" class="product-slide">
+      <img src="img/other5.png" alt="oil">
       <div>
         <span class="article-code">Код товара : 39207</span>
         <span class="availability"><i class="icon-done"></i>В наличии</span>
       </div>
       <p>Моторное масло Castrol
         Magnatec 10W-40 A3/B4 4 л</p>
-      <span>104<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods2.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Shell Helix
-        HX7 10W-40 4 л</p>
       <span>456<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods3.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
+      <div class="buy-button">
+        <span>Купить</span>
+        <i class="icon-balance"></i>
       </div>
-      <p>Моторное масло Mobil Super
-        3000 X1 5W-40 4 л</p>
-      <span>268<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods4.png" alt="oil">
       <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <div class="rating-pos">
+          <i class="icon-star-1"></i>
+          <i class="icon-star-1"></i>
+          <i class="icon-star-1"></i>
+          <i class="icon-star-1"></i>
+          <i class="icon-star-1"></i>
+          <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
+        </div>
       </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>105<span>грн</span></span>
     </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods5.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Shell Helix
-        HX7 10W-40 4 л</p>
-      <span>456<span>грн</span></span>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods1.png" alt="oil">
-      <div>
-        <span class="article-code">Код товара : 39207</span>
-        <span class="availability"><i class="icon-done"></i>В наличии</span>
-      </div>
-      <p>Моторное масло Castrol
-        Magnatec 10W-40 A3/B4 4 л</p>
-      <span>104<span>грн</span></span>
-    </a>
-  </div>
-  <div class="other-goods">
-    <h2 class="product-slider-title">
-      Вы просматривали
-    </h2>
-    <span>Все просмотренные товары</span>
-    <i class="icon-right-open"></i>
-  </div>
-  <div class="other-goods-slider">
-  <a href="#" class="product-slide">
-    <img src="img/goods6.png" alt="oil">
-    <p>Трансмиссионное масло
-      CASTRO Manual EP
-      80W-90 1л
-    </p>
-    <span class="availability"><i class="icon-done"></i>В наличии</span>
-    <span class="price">345<span>грн</span></span>
-    <div class="buy-button">
-      <span>Купить</span>
-      <i class="icon-balance"></i>
+      <a href="#" class="product-slide">
+        <img src="img/other1.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>104<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>3 Отзыва</div>
+          </div>
+        </div>
+      </a>
     </div>
-    <div>
-      <div class="rating-pos">
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <i class="icon-star-1"></i>
-        <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+    <div class="other-goods">
+      <h2 class="product-slider-title">
+        Покупатели выбирают для:
+      </h2>
+      <div class="you-car">
+        <select name="car" id="cars">
+          <option value="Volkswagen Golf, 1.9">Volkswagen Golf, 1.9</option>
+        </select>
       </div>
     </div>
-  </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods7.png" alt="oil">
-      <p>Трансмиссионное масло
-        CASTRO Manual EP
-        80W-90 1л
-      </p>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-      <span class="price">345<span>грн</span></span>
-      <div class="buy-button">
-        <span>Купить</span>
-        <i class="icon-balance"></i>
-      </div>
-      <div>
-        <div class="rating-pos">
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+    <div class="product-slider1">
+      <a href="#" class="product-slide">
+        <img src="img/goods1.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
         </div>
-      </div>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other.png" alt="oil">
-      <p>Трансмиссионное масло
-        CASTRO Manual EP
-        80W-90 1л
-      </p>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-      <span class="price">345<span>грн</span></span>
-      <div class="buy-button">
-        <span>Купить</span>
-        <i class="icon-balance"></i>
-      </div>
-      <div>
-        <div class="rating-pos">
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>104<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods2.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
         </div>
-      </div>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods8.png" alt="oil">
-      <p>Трансмиссионное масло
-        CASTRO Manual EP
-        80W-90 1л
-      </p>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-      <span class="price">345<span>грн</span></span>
-      <div class="buy-button">
-        <span>Купить</span>
-        <i class="icon-balance"></i>
-      </div>
-      <div>
-        <div class="rating-pos">
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+        <p>Моторное масло Shell Helix
+          HX7 10W-40 4 л</p>
+        <span>456<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods3.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
         </div>
-      </div>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/goods9.png" alt="oil">
-      <p>Трансмиссионное масло
-        CASTRO Manual EP
-        80W-90 1л
-      </p>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-      <span class="price">345<span>грн</span></span>
-      <div class="buy-button">
-        <span>Купить</span>
-        <i class="icon-balance"></i>
-      </div>
-      <div>
-        <div class="rating-pos">
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+        <p>Моторное масло Mobil Super
+          3000 X1 5W-40 4 л</p>
+        <span>268<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods4.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
         </div>
-      </div>
-    </a>
-    <a href="#" class="product-slide">
-      <img src="img/other.png" alt="oil">
-      <p>Трансмиссионное масло
-        CASTRO Manual EP
-        80W-90 1л
-      </p>
-      <span class="availability"><i class="icon-done"></i>В наличии</span>
-      <span class="price">345<span>грн</span></span>
-      <div class="buy-button">
-        <span>Купить</span>
-        <i class="icon-balance"></i>
-      </div>
-      <div>
-        <div class="rating-pos">
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <i class="icon-star-1"></i>
-          <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>105<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods5.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
         </div>
-      </div>
-    </a>
+        <p>Моторное масло Shell Helix
+          HX7 10W-40 4 л</p>
+        <span>456<span>грн</span></span>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods1.png" alt="oil">
+        <div>
+          <span class="article-code">Код товара : 39207</span>
+          <span class="availability"><i class="icon-done"></i>В наличии</span>
+        </div>
+        <p>Моторное масло Castrol
+          Magnatec 10W-40 A3/B4 4 л</p>
+        <span>104<span>грн</span></span>
+      </a>
+    </div>
+    <div class="other-goods">
+      <h2 class="product-slider-title">
+        Вы просматривали
+      </h2>
+      <span>Все просмотренные товары</span>
+      <i class="icon-right-open"></i>
+    </div>
+    <div class="other-goods-slider">
+      <a href="#" class="product-slide">
+        <img src="img/goods6.png" alt="oil">
+        <p>Трансмиссионное масло
+          CASTRO Manual EP
+          80W-90 1л
+        </p>
+        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <span class="price">345<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods7.png" alt="oil">
+        <p>Трансмиссионное масло
+          CASTRO Manual EP
+          80W-90 1л
+        </p>
+        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <span class="price">345<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other.png" alt="oil">
+        <p>Трансмиссионное масло
+          CASTRO Manual EP
+          80W-90 1л
+        </p>
+        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <span class="price">345<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods8.png" alt="oil">
+        <p>Трансмиссионное масло
+          CASTRO Manual EP
+          80W-90 1л
+        </p>
+        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <span class="price">345<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/goods9.png" alt="oil">
+        <p>Трансмиссионное масло
+          CASTRO Manual EP
+          80W-90 1л
+        </p>
+        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <span class="price">345<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="product-slide">
+        <img src="img/other.png" alt="oil">
+        <p>Трансмиссионное масло
+          CASTRO Manual EP
+          80W-90 1л
+        </p>
+        <span class="availability"><i class="icon-done"></i>В наличии</span>
+        <span class="price">345<span>грн</span></span>
+        <div class="buy-button">
+          <span>Купить</span>
+          <i class="icon-balance"></i>
+        </div>
+        <div>
+          <div class="rating-pos">
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <i class="icon-star-1"></i>
+            <div class="rating-feedback"><i class="icon-chat"></i>32 Отзыва</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- End also shop -->
   </div>
-  <!-- End also shop -->
+  <!-- End main page -->
 </div>
-<!-- End main page -->
-<script type="text/javascript" src="js/libs.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<!-- Begin Footer -->
+<footer>
+  <div class="footer-wrapper">
+    <div class="footer-left-wrapper">
+      <div class="footer-left">
+        <div class="footer-left-box">
+          <h2>Каталог</h2>
+          <div>
+            <ul>
+              <li><a href="#">Электроника</a></li>
+              <li><a href="#">Звук и видео</a></li>
+              <li><a href="#">Запчасти и расходники</a></li>
+              <li><a href="#">Свет (освещение)</a></li>
+              <li><a href="#">Интерьер</a></li>
+              <li><a href="#">Экстерьер</a></li>
+              <li><a href="#">Колеса</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Багаж и крепление</a></li>
+              <li><a href="#">Автохимия</a></li>
+              <li><a href="#">Техпомощь</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Туризм</a></li>
+              <li><a href="#">4х4 джипинг</a></li>
+              <li><a href="#">Мото</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-left-box">
+          <h2>Компания</h2>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Оптовым покупателям</a></li>
+          </ul>
+        </div>
+        <div class="footer-left-box">
+          <h2>Покупателям</h2>
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
+            <li><a href="#">Бонусная программа</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="footer-left-box">
+          <h2>Информация</h2>
+          <ul>
+            <li><a href="#">Как выбрать</a></li>
+            <li><a href="#">Сравнительные тесты</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Часто задаваемые вопросы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2016, База автозвука</span>
+        <span>
+          Разработано в
+          <a href="#">
+            Турум-бурум
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="footer-right">
+      <a href="#">0 800 30-15-85</a>
+      <span>
+      Бесплатно со стационарных
+и мобильных телефонов Украины
+    </span>
+      <p>Следите за нами в соцсетях:</p>
+      <div class="footer-link">
+        <div>
+          <a href="#" class="icon-facebook"></a>
+          <a href="#" class="icon-google"></a>
+          <a href="#" class="icon-twitter"></a>
+        </div>
+        <div>
+          <a href="#" class="icon-youtube"></a>
+          <a href="#" class="icon-vk"></a>
+          <a href="#" class="icon-instagram"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
